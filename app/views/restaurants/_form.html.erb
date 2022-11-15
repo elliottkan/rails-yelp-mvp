@@ -1,7 +1,10 @@
-<%= simple_form_for(restaurant) do |form| %>
-  <%= form.input :name %>
-  <%= form.input :address %>
-  <%= form.input :phone_number %>
-  <%= form.input :category %>
-  <%= form.submit %>
-<% end %>
+<div class='container border w-50 p-3 my-5 justify-content-center rounded shadow-sm'>
+  <h1 class='mb-5 text-center'>New Restaurant Form</h1>
+  <%= simple_form_for(restaurant) do |form| %>
+    <%= form.input :name %>
+    <%= form.input :address %>
+    <%= form.input :phone_number %>
+    <%= form.input :category, collection: Restaurant::CUISINE %>
+    <%= form.submit nil, {class:"btn btn-primary mb-1 my-3 w-100"} %>
+  <% end %>
+</div>

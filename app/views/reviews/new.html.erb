@@ -1,0 +1,6 @@
+
+<div class='container border w-50 p-3 my-3 justify-content-center rounded shadow-sm'>
+<h1>Write your review for <%= @restaurant.name %> </h1>
+
+<%= render 'reviews/form', {restaurant: @restaurant, review: @review} %>
+</div>

@@ -1,4 +1,5 @@
-<% restaurants.each do |restaurant| %>
- <%= render 'restaurants/restaurant', restaurant: restaurant %>
-<% end %>
-
+<div class='container'>
+  <% restaurants.each do |restaurant| %>
+  <%= render 'restaurants/restaurant', {restaurant: restaurant} %>
+  <% end %>
+</div>

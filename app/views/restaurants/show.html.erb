@@ -1,1 +1,7 @@
-<%= render 'restaurants/restaurant', {restaurant: @restaurant} %>
+<% if notice %>
+  <div class="container mt-3">
+<% else %>
+  <div class="container mt-5">
+<% end %>
+<%= render 'restaurants/individual', {restaurant: @restaurant} %>
+</div>

@@ -1,4 +1,4 @@
-<div id="<%= dom_id restaurant %>" class="border">
+<div id="<%= dom_id restaurant %>" class="border card mb-3 px-3 pt-3">
   <p>
     <strong>Name:</strong>
     <%= restaurant.name %>
@@ -20,6 +20,6 @@
   </p>
 
   <p>
-    <%# <%= link_to "Show this restaurant", restaurant_path(restaurant) %>
+    <%= link_to "Show this restaurant", restaurant_path(restaurant), {:class => "btn btn-primary w-100"} %>
   </p>
 </div>
